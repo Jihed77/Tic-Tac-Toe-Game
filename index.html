@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe GAME</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Start the Game</div>
+
+        <div class="box" id="box1" onclick="game(this.id)"></div>
+        <div class="box" id="box2" onclick="game(this.id)"></div>
+        <div class="box" id="box3" onclick="game(this.id)"></div>
+
+        <div class="box" id="box4" onclick="game(this.id)"></div>
+        <div class="box" id="box5" onclick="game(this.id)"></div>
+        <div class="box" id="box6" onclick="game(this.id)"></div>
+
+        <div class="box" id="box7" onclick="game(this.id)"></div>
+        <div class="box" id="box8" onclick="game(this.id)"></div>
+        <div class="box" id="box9" onclick="game(this.id)"></div>
+
+        <div class="clear"></div>
+
+        <div class="players">
+            <h4><i class="fa-duotone fa-solid fa-person"></i>  Player 1 = <span id="player1">0</span></h4>
+            <h4><i class="fa-duotone fa-solid fa-person"></i>  Player 2 = <span id="player2">0</span></h4>
+            <h4>Draw = <span id="draw">0</span></h4>
+        </div>
+        <button onclick="resetGame()" class="reset-btn"><i class="fa-solid fa-rotate-right"></i> Reset Game</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
